@@ -13,7 +13,7 @@
     <div id="app">
         <div class="container">
             <h1>Random Email Addresses</h1> 
-            <ul>
+            <ul v-show="emailAddList.length === 10">
                 <li v-for="email in emailAddList">{{email}}</li>
             </ul>
         </div>
